@@ -1,0 +1,1 @@
+Code Optimizations for Different Architectures AGH Course 2023/24
