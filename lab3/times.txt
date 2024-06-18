@@ -1,0 +1,27 @@
+-O2:
+1) call GETime: 1.520835e+000 
+Check: -2.852532e+010 
+2) call GETime: 1.499864e+000 
+Check: -2.852532e+010 
+3) call GETime: 8.017330e-001 
+Check: -2.852532e+010 
+4) call GETime: 6.877940e-001 
+Check: -2.852532e+010 
+5) call GETime: 7.686810e-001 
+Check: -2.852532e+010
+6) error
+7) error
+
+-O2 -march=native (6, 7):
+6) call GETime: 9.216900e-001 
+Check: -2.852532e+010 
+7) call GETime: 6.745760e-001 
+Check: -2.852532e+010
+
+-O2 -mavx -march=native (7):
+7) call GETime: 7.424520e-001 
+Check: -2.852532e+010 
+
+-O2 -mavx -march=native -mfma (7):
+7) call GETime: 5.965350e-001 
+Check: -2.852532e+010

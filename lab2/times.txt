@@ -1,0 +1,26 @@
+-no-flags:
+    chol1: Time: 3.040808e+001 
+    chol2: Time: 1.476768e+000 
+    chol3: Time: 2.164849e+001 
+    chol4: error
+    chol5: error
+    chol6: error
+    
+-O2:
+    chol1: Time: 1.175211e+001 
+    chol2: Time: 1.549990e-001 
+    chol3: Time: 8.707165e+000 
+    chol4: error
+    chol5: error
+    chol6: error
+
+-O2 -march=native
+    chol1: Time: 1.209724e+001 
+    chol2: Time: 7.097400e-002 
+    chol3: Time: 8.342847e+000 
+    chol4: Time: 8.379657e+000 
+        Sum of array: 4000.000000
+    chol5: Time: 4.637049e+000 
+        Sum of array: 4000.000000
+    chol6: Time: 4.611676e+000 
+        Sum of array: 4000.000000
